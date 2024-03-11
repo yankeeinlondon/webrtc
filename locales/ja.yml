@@ -1,0 +1,21 @@
+app:
+  desc: シンプルなピアツーピア チャット クライアント
+  title: おしゃべり
+button:
+  about: これは？
+  back: 戻る
+  go: 進む
+  home: ホーム
+  toggle_dark: ダークモード切り替え
+  toggle_langs: 言語切り替え
+intro:
+  desc: 固執された Vite スターターテンプレート
+  dynamic-route: 動的ルートのデモ
+  hi: こんにちは、{name}!
+  whats-your-name: 君の名は。
+login:
+  login_btn: ログイン
+  password: パスワード
+  register_btn: 登録する
+  username: あなたのメールアドレス
+not-found: 見つかりませんでした

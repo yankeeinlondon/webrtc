@@ -1,0 +1,21 @@
+app:
+  desc: Простой клиент однорангового чата
+  title: Болтовня
+button:
+  about: О шаблоне
+  back: Назад
+  go: Перейти
+  home: Главная
+  toggle_dark: Включить темный режим
+  toggle_langs: Сменить язык
+intro:
+  desc: Самостоятельный начальный шаблон Vite
+  dynamic-route: Демо динамического маршрута
+  hi: Привет, {name}!
+  whats-your-name: Как тебя зовут?
+login:
+  login_btn: Авторизоваться
+  password: Пароль
+  register_btn: регистр
+  username: Ваш адрес электронной почты
+not-found: Не найден

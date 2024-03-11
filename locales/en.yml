@@ -1,0 +1,31 @@
+
+app:
+  title: Chatter
+  desc: A simple peer-to-peer chat client
+
+404:
+  not-found: Page Not found
+
+login:
+  label: Let's get this chatter started
+  username: Your email
+  password: Password
+  login_btn: Login
+  register_btn: Register
+
+global:
+  switch-lang: Switch Language
+  toggle-dark: Toggle Light/Dark Mode
+  logout: Logout
+
+register:
+  title: Registration
+  sub-title: Registering Chatter app for
+  message-1: The registration is being processed and you'll soon get an email that will allow you to complete the registration process.
+  message-2: Click on the button in the email and you will automatically be logged in.
+
+
+button:
+  back: Back
+  submit: Submit
+  save: Save

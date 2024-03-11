@@ -1,0 +1,22 @@
+app:
+  desc: Un simple client de chat peer-to-peer
+  title: Bavarder
+button:
+  about: À propos
+  back: Dos
+  go: Essayer
+  home: Accueil
+  toggle_dark: Basculer en mode sombre
+  toggle_langs: Changer de langue
+intro:
+  aka: Aussi connu sous le nom de
+  desc: Exemple d'application Vite
+  dynamic-route: Démo de route dynamique
+  hi: Salut, {name}!
+  whats-your-name: Comment t'appelles-tu ?
+login:
+  login_btn: Se connecter
+  password: Mot de passe
+  register_btn: Registre
+  username: Votre email
+not-found: Page non trouvée

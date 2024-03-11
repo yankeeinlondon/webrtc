@@ -1,0 +1,22 @@
+app:
+  desc: Un simple cliente de chat peer-to-peer
+  title: Charla
+button:
+  about: Acerca de
+  back: Atrás
+  go: Ir
+  home: Inicio
+  toggle_dark: Alternar modo oscuro
+  toggle_langs: Cambiar idiomas
+intro:
+  aka: También conocido como
+  desc: Plantilla de Inicio de Vite Dogmática
+  dynamic-route: Demo de ruta dinámica
+  hi: ¡Hola, {name}!
+  whats-your-name: ¿Cómo te llamas?
+login:
+  login_btn: Acceso
+  password: Contraseña
+  register_btn: Registro
+  username: Tu correo electrónico
+not-found: No se ha encontrado

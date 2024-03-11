@@ -1,0 +1,21 @@
+app:
+  desc: Un semplice client di chat peer-to-peer
+  title: Chiacchiere
+button:
+  about: Su di me
+  back: Indietro
+  go: Vai
+  home: Home
+  toggle_dark: Attiva/disattiva modalità scura
+  toggle_langs: Cambia lingua
+intro:
+  desc: Modello per una Applicazione Vite
+  dynamic-route: Demo di rotta dinamica
+  hi: Ciao, {name}!
+  whats-your-name: Come ti chiami?
+login:
+  login_btn: Login
+  password: Parola d'ordine
+  register_btn: Registrati
+  username: La tua email
+not-found: Non trovato

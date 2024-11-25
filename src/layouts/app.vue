@@ -6,7 +6,5 @@
   >
     <TheHeader />
     <RouterView />
-
-    APP LAYOUT
   </main>
 </template>

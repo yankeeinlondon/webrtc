@@ -8,10 +8,11 @@ app:
 
 login:
   label: Let's get this chatter started
-  username: Your email
+  username: Your Name
   password: Password
   login_btn: Login
   register_btn: Register
+  start_btn: Start
 
 global:
   switch-lang: Switch Language

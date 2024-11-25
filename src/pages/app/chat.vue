@@ -4,5 +4,5 @@
 
 
 <template>
-  <div>New User</div>
+  <div>Chat with</div>
 </template>

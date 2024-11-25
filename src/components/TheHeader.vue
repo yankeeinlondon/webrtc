@@ -2,6 +2,7 @@
 import { availableLocales, loadLanguageAsync } from '~/modules/i18n'
 
 const { t, locale } = useI18n()
+const router = useRouter();
 
 async function toggleLocales() {
   // change to some real logic
@@ -13,6 +14,7 @@ async function toggleLocales() {
 
 async function logout() {
 
+  router.push({ name: "/" });
 }
 
 </script>

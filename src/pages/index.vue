@@ -7,34 +7,17 @@ definePage({
 
 defineOptions({
   name: 'IndexPage',
-})
-const user = useUserStore();
-const username = ref(user.savedEmail);
-const password = ref('');
-
-const validEmail = computed( () => {
-  const req_chars = ["@", "."];
-  const alpha_char= /.*[a-zA-Z]$/;
-
-  return alpha_char.test(username.value) && req_chars.every(i => username.value.includes(i))
 });
 
-const router = useRouter()
-async function login() {
-  if (username.value && password.value) {
-    const result = await user.login(username.value, password.value);
-    if (result) {
-      router.push({path: `/app/friends`, params: { username }})
-    } else {
-      // set error status
-    }
-  }
-}
+const user = useUserStore();
+const username = ref('');
+const router = useRouter();
 
-function register() {
-  if (username.value) {
-    user.setNewEmail(username.value);
-    router.push({ path: `/register/${username.value}` });
+function start() {
+  if (username.value.length > 2) {
+    user.name = username.value
+    console.log(`Go ${username.value}`)
+    router.push({name: "Friends"})
   }
 }
 
@@ -57,48 +40,26 @@ const { t } = useI18n()
 
     <div py-4 />
 
-    <div class="has-users" v-if="user.hasAtLeastOneUser">
-      <div>
-        <TheInput
-          id="username"
-          type="email"
-          v-model="username"
-          :placeholder="t('login.username')"
-          autocomplete="false"
-          @keydown.enter="register"
-        />
-      </div>
-      <label class="hidden" for="input">{{ t('login.username') }}</label>
+    <div>
+      <TheInput
+        id="username"
+        type="string"
+        v-model="username"
+        :placeholder="t('login.username')"
+        autocomplete=false
+        @keydown.enter="start"
+      />
+    </div>
+    <label class="hidden" for="input">{{ t('login.username') }}</label>
 
-      <div class="mt-2">
-        <TheInput
-          v-model="password"
-          type="password"
-          id="password"
-          :placeholder="t('login.password')"
-          autocomplete="false"
-          @keydown.enter="login"
-        />
-        <label class="hidden" for="input">{{ t('login.password') }}</label>
-      </div>
-
-      <div>
-        <button
-          m-3 text-sm btn
-          :disabled="!username || password.length < 4 || !password"
-          @click="login"
-        >
-          {{ t('login.login_btn') }}
-        </button>
-
-        <button
-          m-3 text-sm btn
-          :disabled="!username || !validEmail || !!password"
-          @click="register"
-        >
-          {{ t('login.register_btn') }}
-        </button>
-      </div>
+    <div class="cta">
+      <button
+        m-3 text-sm btn
+        :disabled="username.length <  2 "
+        @click="start"
+      >
+        {{ t('login.start_btn') }}
+      </button>
 
     </div>
   </div>

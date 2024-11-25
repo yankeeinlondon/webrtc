@@ -34,7 +34,7 @@ export type UserProfile = {
   name: string;
   signing_key: Uint8Array;
   public_key: Uint8Array;
-  friends: Friend[];
+  friends: Ref<Friend[]>;
   /**
    * A dictionary of chats where the _key_ references
    * the username of the user being talked to and the
@@ -42,7 +42,7 @@ export type UserProfile = {
    *
    * @type {Record<string, Chat>}
    */
-  chats: Record<string, Chat>;
+  chats: Ref<Record<string, Chat>>;
 }
 
 export type Message = {
